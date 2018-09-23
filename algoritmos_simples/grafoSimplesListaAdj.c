@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-TODO: Label do vertice nao esta funcionando
-*/
 typedef struct vertice
 {
     int no;
@@ -25,17 +22,6 @@ void imprimeGrafo(Grafo *G);
 int grauVertice(Grafo *G, int v);
 int GrafosGrausVerticesIguais(Grafo *A, Grafo *B);
 
-
-
-
-/*
-Tarefas:
-- Imprimir a estrutura de armazenamento do grafo;
-- Calcular o grau de um vértice;
-- Verificar se a sequência de graus dos vértices de dois grafos são
-iguais.
-- Função main para testar todas as outras funções.
-*/
 
 void main()
 {
@@ -59,7 +45,7 @@ void main()
 	insereAresta(A, 1, 3);
 	insereAresta(A, 2, 1);
 	insereAresta(A, 2, 3);
-//	removeAresta(A, 2, 3);
+	removeAresta(A, 2, 3);
 
     printf("%2d\n", GrafosGrausVerticesIguais(G, A));
 }

@@ -1,6 +1,6 @@
 /*
 	As seguintes implementações não é para grafos
-	valorados, direcionados. Apenas grafos simples, implementados
+	valorados e/ou direcionados. Apenas grafos simples, implementados
 	utilizanto matriz de adjacencias.
 
 */
@@ -27,15 +27,6 @@ void imprimeGrafo(Grafo *);
 int verificaAdjacencia(Grafo *, int, int);
 int grauVertice(Grafo *, int);
 void imprimeAdjacentes(Grafo *, int);
-
-/*
-Tarefas:
-- Implemente uma função que recebe um grafo e dois vértices, x e y,
-retorna 1 caso o vértice x e y são adjacentes e 0 caso contrário.
-- Implemente uma função que calcula o grau de um vértice.
-- Implemente uma função que recebe um grafo e um vértice x, e
-imprime todos os vértices adjacentes a x.
-*/
 
 // Fim Protótipos
 
